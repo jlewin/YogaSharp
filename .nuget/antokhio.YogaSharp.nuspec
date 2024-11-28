@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>antokhio.YogaSharp</id>
+    <version>1.0.4-alpha-0.0.1</version>
+    <title>antokhio.YogaSharp</title>
+    <authors>Haselnussbomber, antokhio</authors>
+    <owners>antokhio</owners>
+    <license type="expression">MIT</license>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <readme>README.md</readme>
+    <projectUrl>https://github.com/antokhio/YogaSharp</projectUrl>
+    <summary>Nuget for https://github.com/Haselnussbomber/YogaSharp</summary>
+    <description></description>
+    <copyright>Copyright © 2024</copyright>
+    <tags>yoga, flex, flexbox</tags>
+    <dependencies>
+      <group targetFramework="net8.0" />
+    </dependencies>
+  </metadata>
+   <files>
+    <file src="..\bin\*.dll" target="lib\net8.0\*.dll" />
+    <file src="..\yoga\build\yoga\*.dll" target="runtimes\win-x64\native\*.dll" />
+    <file src="..\yoga\LICENSE"  target="LICENSE"/>
+  </files>
+</package>
