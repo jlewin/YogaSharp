@@ -4,7 +4,7 @@ namespace YogaSharp;
 
 public static unsafe partial class Interop
 {
-    private const string yogacoredll = @"runtimes\win-x64\native\yogacore.dll";
+    private const string yogacoredll = @"yogacore.dll";
 
     /// <summary>
     /// Returns the computed dimensions of the node, following the contraints of <paramref name="widthMode"/> and <paramref name="heightMode"/>:<br/>

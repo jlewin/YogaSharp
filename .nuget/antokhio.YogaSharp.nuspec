@@ -21,6 +21,7 @@
    <files>
     <file src="..\bin\*.dll" target="lib\net8.0" />
     <file src="..\yoga\build\yoga\*.dll" target="runtimes\win-x64\native" />
-    <file src="..\yoga\LICENSE"  target="LICENSE"/>
+    <file src="..\yoga\LICENSE"  />
+    <file src="..\README.md" />
   </files>
 </package>
