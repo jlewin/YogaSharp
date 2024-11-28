@@ -19,8 +19,8 @@
     </dependencies>
   </metadata>
    <files>
-    <file src="..\bin\*.dll" target="lib\net8.0\*.dll" />
-    <file src="..\yoga\build\yoga\*.dll" target="runtimes\win-x64\native\*.dll" />
+    <file src="..\bin\*.dll" target="lib\net8.0" />
+    <file src="..\yoga\build\yoga\*.dll" target="runtimes\win-x64\native" />
     <file src="..\yoga\LICENSE"  target="LICENSE"/>
   </files>
 </package>
