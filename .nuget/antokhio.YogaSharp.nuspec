@@ -11,7 +11,7 @@
     <readme>README.md</readme>
     <projectUrl>https://github.com/antokhio/YogaSharp</projectUrl>
     <summary>Nuget for https://github.com/Haselnussbomber/YogaSharp</summary>
-    <description></description>
+    <description>Facebook Yoga bindings for c#</description>
     <copyright>Copyright © 2024</copyright>
     <tags>yoga, flex, flexbox</tags>
     <dependencies>
