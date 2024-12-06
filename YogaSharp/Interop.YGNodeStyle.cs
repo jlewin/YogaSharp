@@ -95,6 +95,15 @@ public static unsafe partial class Interop
     public static extern void YGNodeStyleSetFlexBasisAuto(YGNode* node);
 
     [DllImport(yogacoredll, CallingConvention = CallingConvention.Cdecl)]
+    public static extern void YGNodeStyleSetFlexBasisMaxContent(YGNode* node);
+
+    [DllImport(yogacoredll, CallingConvention = CallingConvention.Cdecl)]
+    public static extern void YGNodeStyleSetFlexBasisFitContent(YGNode* node);
+
+    [DllImport(yogacoredll, CallingConvention = CallingConvention.Cdecl)]
+    public static extern void YGNodeStyleSetFlexBasisStretch(YGNode* node);
+
+    [DllImport(yogacoredll, CallingConvention = CallingConvention.Cdecl)]
     public static extern YGValue YGNodeStyleGetFlexBasis(YGNode* node);
 
     [DllImport(yogacoredll, CallingConvention = CallingConvention.Cdecl)]
@@ -102,6 +111,9 @@ public static unsafe partial class Interop
 
     [DllImport(yogacoredll, CallingConvention = CallingConvention.Cdecl)]
     public static extern void YGNodeStyleSetPositionPercent(YGNode* node, YGEdge edge, float percent);
+
+    [DllImport(yogacoredll, CallingConvention = CallingConvention.Cdecl)]
+    public static extern void YGNodeStyleSetPositionAuto(YGNode* node, YGEdge edge);
 
     [DllImport(yogacoredll, CallingConvention = CallingConvention.Cdecl)]
     public static extern YGValue YGNodeStyleGetPosition(YGNode* node, YGEdge edge);
@@ -140,6 +152,12 @@ public static unsafe partial class Interop
     public static extern float YGNodeStyleGetGap(YGNode* node, YGGutter gutter);
 
     [DllImport(yogacoredll, CallingConvention = CallingConvention.Cdecl)]
+    public static extern void YGNodeStyleSetBoxSizing(YGNode* node, YGBoxSizing boxSizing);
+
+    [DllImport(yogacoredll, CallingConvention = CallingConvention.Cdecl)]
+    public static extern YGBoxSizing YGNodeStyleGetBoxSizing(YGNode* node);
+
+    [DllImport(yogacoredll, CallingConvention = CallingConvention.Cdecl)]
     public static extern void YGNodeStyleSetAspectRatio(YGNode* node, float aspectRatio);
 
     [DllImport(yogacoredll, CallingConvention = CallingConvention.Cdecl)]
@@ -155,6 +173,15 @@ public static unsafe partial class Interop
     public static extern void YGNodeStyleSetWidthAuto(YGNode* node);
 
     [DllImport(yogacoredll, CallingConvention = CallingConvention.Cdecl)]
+    public static extern void YGNodeStyleSetWidthMaxContent(YGNode* node);
+
+    [DllImport(yogacoredll, CallingConvention = CallingConvention.Cdecl)]
+    public static extern void YGNodeStyleSetWidthFitContent(YGNode* node);
+
+    [DllImport(yogacoredll, CallingConvention = CallingConvention.Cdecl)]
+    public static extern void YGNodeStyleSetWidthStretch(YGNode* node);
+
+    [DllImport(yogacoredll, CallingConvention = CallingConvention.Cdecl)]
     public static extern YGValue YGNodeStyleGetWidth(YGNode* node);
 
     [DllImport(yogacoredll, CallingConvention = CallingConvention.Cdecl)]
@@ -167,6 +194,15 @@ public static unsafe partial class Interop
     public static extern void YGNodeStyleSetHeightAuto(YGNode* node);
 
     [DllImport(yogacoredll, CallingConvention = CallingConvention.Cdecl)]
+    public static extern void YGNodeStyleSetHeightMaxContent(YGNode* node);
+
+    [DllImport(yogacoredll, CallingConvention = CallingConvention.Cdecl)]
+    public static extern void YGNodeStyleSetHeightFitContent(YGNode* node);
+
+    [DllImport(yogacoredll, CallingConvention = CallingConvention.Cdecl)]
+    public static extern void YGNodeStyleSetHeightStretch(YGNode* node);
+
+    [DllImport(yogacoredll, CallingConvention = CallingConvention.Cdecl)]
     public static extern YGValue YGNodeStyleGetHeight(YGNode* node);
 
     [DllImport(yogacoredll, CallingConvention = CallingConvention.Cdecl)]
@@ -174,6 +210,15 @@ public static unsafe partial class Interop
 
     [DllImport(yogacoredll, CallingConvention = CallingConvention.Cdecl)]
     public static extern void YGNodeStyleSetMinWidthPercent(YGNode* node, float minWidth);
+
+    [DllImport(yogacoredll, CallingConvention = CallingConvention.Cdecl)]
+    public static extern void YGNodeStyleSetMinWidthMaxContent(YGNode* node);
+
+    [DllImport(yogacoredll, CallingConvention = CallingConvention.Cdecl)]
+    public static extern void YGNodeStyleSetMinWidthFitContent(YGNode* node);
+
+    [DllImport(yogacoredll, CallingConvention = CallingConvention.Cdecl)]
+    public static extern void YGNodeStyleSetMinWidthStretch(YGNode* node);
 
     [DllImport(yogacoredll, CallingConvention = CallingConvention.Cdecl)]
     public static extern YGValue YGNodeStyleGetMinWidth(YGNode* node);
@@ -185,6 +230,15 @@ public static unsafe partial class Interop
     public static extern void YGNodeStyleSetMinHeightPercent(YGNode* node, float minHeight);
 
     [DllImport(yogacoredll, CallingConvention = CallingConvention.Cdecl)]
+    public static extern void YGNodeStyleSetMinHeightMaxContent(YGNode* node);
+
+    [DllImport(yogacoredll, CallingConvention = CallingConvention.Cdecl)]
+    public static extern void YGNodeStyleSetMinHeightFitContent(YGNode* node);
+
+    [DllImport(yogacoredll, CallingConvention = CallingConvention.Cdecl)]
+    public static extern void YGNodeStyleSetMinHeightStretch(YGNode* node);
+
+    [DllImport(yogacoredll, CallingConvention = CallingConvention.Cdecl)]
     public static extern YGValue YGNodeStyleGetMinHeight(YGNode* node);
 
     [DllImport(yogacoredll, CallingConvention = CallingConvention.Cdecl)]
@@ -194,6 +248,15 @@ public static unsafe partial class Interop
     public static extern void YGNodeStyleSetMaxWidthPercent(YGNode* node, float maxWidth);
 
     [DllImport(yogacoredll, CallingConvention = CallingConvention.Cdecl)]
+    public static extern void YGNodeStyleSetMaxWidthMaxContent(YGNode* node);
+
+    [DllImport(yogacoredll, CallingConvention = CallingConvention.Cdecl)]
+    public static extern void YGNodeStyleSetMaxWidthFitContent(YGNode* node);
+
+    [DllImport(yogacoredll, CallingConvention = CallingConvention.Cdecl)]
+    public static extern void YGNodeStyleSetMaxWidthStretch(YGNode* node);
+
+    [DllImport(yogacoredll, CallingConvention = CallingConvention.Cdecl)]
     public static extern YGValue YGNodeStyleGetMaxWidth(YGNode* node);
 
     [DllImport(yogacoredll, CallingConvention = CallingConvention.Cdecl)]
@@ -201,6 +264,18 @@ public static unsafe partial class Interop
 
     [DllImport(yogacoredll, CallingConvention = CallingConvention.Cdecl)]
     public static extern void YGNodeStyleSetMaxHeightPercent(YGNode* node, float maxHeight);
+
+    [DllImport(yogacoredll, CallingConvention = CallingConvention.Cdecl)]
+    public static extern void YGNodeStyleSetMaxHeightPercent(YGNode* node);
+
+    [DllImport(yogacoredll, CallingConvention = CallingConvention.Cdecl)]
+    public static extern void YGNodeStyleSetMaxHeightMaxContent(YGNode* node);
+
+    [DllImport(yogacoredll, CallingConvention = CallingConvention.Cdecl)]
+    public static extern void YGNodeStyleSetMaxHeightFitContent(YGNode* node);
+
+    [DllImport(yogacoredll, CallingConvention = CallingConvention.Cdecl)]
+    public static extern void YGNodeStyleSetMaxHeightStretch(YGNode* node);
 
     [DllImport(yogacoredll, CallingConvention = CallingConvention.Cdecl)]
     public static extern YGValue YGNodeStyleGetMaxHeight(YGNode* node);

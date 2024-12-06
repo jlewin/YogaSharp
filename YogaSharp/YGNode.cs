@@ -551,6 +551,13 @@ public unsafe struct YGNode : IDisposable
             Interop.YGNodeStyleSetPositionPercent(ptr, edge, percent);
     }
 
+    /// <inheritdoc cref="Interop.YGNodeStyleSetPositionAuto(YGNode*, YGEdge)"/>
+    public void SetPositionAuto(YGEdge edge)
+    {
+        fixed (YGNode* ptr = &this)
+            Interop.YGNodeStyleSetPositionAuto(ptr, edge);
+    }
+
     /// <inheritdoc cref="Interop.YGNodeStyleGetPosition(YGNode*, YGEdge)"/>
     public YGValue GetPosition(YGEdge edge)
     {
@@ -635,6 +642,20 @@ public unsafe struct YGNode : IDisposable
             return Interop.YGNodeStyleGetGap(ptr, gutter);
     }
 
+    /// <inheritdoc cref="Interop.YGNodeStyleSetBoxSizing(YGNode*, YGBoxSizing)"/>
+    public void SetBoxSizing(YGBoxSizing boxSizing)
+    {
+        fixed (YGNode* ptr = &this)
+            Interop.YGNodeStyleSetBoxSizing(ptr, boxSizing);
+    }
+
+    /// <inheritdoc cref="Interop.YGNodeStyleGetBoxSizing(YGNode*)"/>
+    public YGBoxSizing GetBoxSizing()
+    {
+        fixed (YGNode* ptr = &this)
+            return Interop.YGNodeStyleGetBoxSizing(ptr);
+    }
+
     /// <inheritdoc cref="Interop.YGNodeStyleSetAspectRatio(YGNode*, float)"/>
     public void SetAspectRatio(float aspectRatio)
     {
@@ -670,6 +691,27 @@ public unsafe struct YGNode : IDisposable
             Interop.YGNodeStyleSetWidthAuto(ptr);
     }
 
+    /// <inheritdoc cref="Interop.YGNodeStyleSetWidthMaxContent(YGNode*)"/>
+    public void SetWidthMaxContent()
+    {
+        fixed (YGNode* ptr = &this)
+            Interop.YGNodeStyleSetWidthMaxContent(ptr);
+    }
+
+    /// <inheritdoc cref="Interop.YGNodeStyleSetWidthFitContent(YGNode*)"/>
+    public void SetWidthFitContent()
+    {
+        fixed (YGNode* ptr = &this)
+            Interop.YGNodeStyleSetWidthFitContent(ptr);
+    }
+
+    /// <inheritdoc cref="Interop.YGNodeStyleSetWidthStretch(YGNode*)"/>
+    public void SetWidthStretch()
+    {
+        fixed (YGNode* ptr = &this)
+            Interop.YGNodeStyleSetWidthStretch(ptr);
+    }
+
     /// <inheritdoc cref="Interop.YGNodeStyleGetWidth(YGNode*)"/>
     public YGValue GetWidth()
     {
@@ -698,6 +740,27 @@ public unsafe struct YGNode : IDisposable
             Interop.YGNodeStyleSetHeightAuto(ptr);
     }
 
+    /// <inheritdoc cref="Interop.YGNodeStyleSetHeightMaxContent(YGNode*)"/>
+    public void SetHeightMaxContent()
+    {
+        fixed (YGNode* ptr = &this)
+            Interop.YGNodeStyleSetHeightMaxContent(ptr);
+    }
+
+    /// <inheritdoc cref="Interop.YGNodeStyleSetHeightFitContent(YGNode*)"/>
+    public void SetHeightFitContent()
+    {
+        fixed (YGNode* ptr = &this)
+            Interop.YGNodeStyleSetHeightFitContent(ptr);
+    }
+
+    /// <inheritdoc cref="Interop.YGNodeStyleSetHeightStretch(YGNode*)"/>
+    public void SetHeightStretch()
+    {
+        fixed (YGNode* ptr = &this)
+            Interop.YGNodeStyleSetHeightStretch(ptr);
+    }
+
     /// <inheritdoc cref="Interop.YGNodeStyleGetHeight(YGNode*)"/>
     public YGValue GetHeight()
     {
@@ -717,6 +780,27 @@ public unsafe struct YGNode : IDisposable
     {
         fixed (YGNode* ptr = &this)
             Interop.YGNodeStyleSetMinWidthPercent(ptr, minWidth);
+    }
+
+    /// <inheritdoc cref="Interop.YGNodeStyleSetMinWidthMaxContent(YGNode*)"/>
+    public void SetMinWidthMaxContent()
+    {
+        fixed (YGNode* ptr = &this)
+            Interop.YGNodeStyleSetMinWidthMaxContent(ptr);
+    }
+
+    /// <inheritdoc cref="Interop.YGNodeStyleSetMinWidthFitContent(YGNode*)"/>
+    public void SetMinWidthFitContent()
+    {
+        fixed (YGNode* ptr = &this)
+            Interop.YGNodeStyleSetMinWidthFitContent(ptr);
+    }
+
+    /// <inheritdoc cref="Interop.YGNodeStyleSetMinWidthStretch(YGNode*)"/>
+    public void SetMinWidthStretch()
+    {
+        fixed (YGNode* ptr = &this)
+            Interop.YGNodeStyleSetMinWidthStretch(ptr);
     }
 
     /// <inheritdoc cref="Interop.YGNodeStyleGetMinWidth(YGNode*)"/>
@@ -740,6 +824,27 @@ public unsafe struct YGNode : IDisposable
             Interop.YGNodeStyleSetMinHeightPercent(ptr, minHeight);
     }
 
+    /// <inheritdoc cref="Interop.YGNodeStyleSetMinHeightMaxContent(YGNode*)"/>
+    public void SetMinHeightMaxContent()
+    {
+        fixed (YGNode* ptr = &this)
+            Interop.YGNodeStyleSetMinHeightMaxContent(ptr);
+    }
+
+    /// <inheritdoc cref="Interop.YGNodeStyleSetMinHeightFitContent(YGNode*)"/>
+    public void SetMinHeightFitContent()
+    {
+        fixed (YGNode* ptr = &this)
+            Interop.YGNodeStyleSetMinHeightFitContent(ptr);
+    }
+
+    /// <inheritdoc cref="Interop.YGNodeStyleSetMinHeightStretch(YGNode*)"/>
+    public void SetMinHeightStretch()
+    {
+        fixed (YGNode* ptr = &this)
+            Interop.YGNodeStyleSetMinHeightStretch(ptr);
+    }
+
     /// <inheritdoc cref="Interop.YGNodeStyleGetMinHeight(YGNode*)"/>
     public YGValue GetMinHeight()
     {
@@ -761,6 +866,27 @@ public unsafe struct YGNode : IDisposable
             Interop.YGNodeStyleSetMaxWidthPercent(ptr, maxWidth);
     }
 
+    /// <inheritdoc cref="Interop.YGNodeStyleSetMaxWidthMaxContent(YGNode*)"/>
+    public void SetMaxWidthMaxContent()
+    {
+        fixed (YGNode* ptr = &this)
+            Interop.YGNodeStyleSetMaxWidthMaxContent(ptr);
+    }
+
+    /// <inheritdoc cref="Interop.YGNodeStyleSetMaxWidthFitContent(YGNode*)"/>
+    public void SetMaxWidthFitContent()
+    {
+        fixed (YGNode* ptr = &this)
+            Interop.YGNodeStyleSetMaxWidthFitContent(ptr);
+    }
+
+    /// <inheritdoc cref="Interop.YGNodeStyleSetMaxWidthStretch(YGNode*)"/>
+    public void SetMaxWidthStretch()
+    {
+        fixed (YGNode* ptr = &this)
+            Interop.YGNodeStyleSetMaxWidthStretch(ptr);
+    }
+
     /// <inheritdoc cref="Interop.YGNodeStyleGetMaxWidth(YGNode*)"/>
     public YGValue GetMaxWidth()
     {
@@ -780,6 +906,27 @@ public unsafe struct YGNode : IDisposable
     {
         fixed (YGNode* ptr = &this)
             Interop.YGNodeStyleSetMaxHeightPercent(ptr, maxHeight);
+    }
+
+    /// <inheritdoc cref="Interop.YGNodeStyleSetMaxHeightMaxContent(YGNode*)"/>
+    public void SetMaxHeightMaxContent()
+    {
+        fixed (YGNode* ptr = &this)
+            Interop.YGNodeStyleSetMaxHeightMaxContent(ptr);
+    }
+
+    /// <inheritdoc cref="Interop.YGNodeStyleSetMaxHeightFitContent(YGNode*)"/>
+    public void SetMaxHeightFitContent()
+    {
+        fixed (YGNode* ptr = &this)
+            Interop.YGNodeStyleSetMaxHeightFitContent(ptr);
+    }
+
+    /// <inheritdoc cref="Interop.YGNodeStyleSetMaxHeightStretch(YGNode*)"/>
+    public void SetMaxHeightStretch()
+    {
+        fixed (YGNode* ptr = &this)
+            Interop.YGNodeStyleSetMaxHeightStretch(ptr);
     }
 
     /// <inheritdoc cref="Interop.YGNodeStyleGetMaxHeight(YGNode*)"/>
