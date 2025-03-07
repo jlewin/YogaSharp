@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>YogaSharp</AssemblyName>
     <PackageId>antokhio.YogaSharp</PackageId>
@@ -47,4 +47,7 @@
     <None Condition="Exists('..\yoga\build\yoga\$(Configuration)\yogacore.dll')" Include="..\yoga\build\yoga\$(Configuration)\yogacore.dll" Pack="true" PackagePath="runtimes\win-x64\native" />
     <None Condition="Exists('..\yoga\build\yoga\$(Configuration)\yogacore.pdb')" Include="..\yoga\build\yoga\$(Configuration)\yogacore.pdb" Pack="true" PackagePath="runtimes\win-x64\native" />
   </ItemGroup>
+  <Target Name="BuildNativeLibs" BeforeTargets="BeforeBuild">
+    <Exec Command="build-yogacore.bat $(Configuration)" WorkingDirectory="$(ProjectDir)..\"  />
+  </Target>
 </Project>
